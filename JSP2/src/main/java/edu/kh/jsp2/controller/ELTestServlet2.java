@@ -65,6 +65,20 @@ public class ELTestServlet2 extends HttpServlet {
 		// 2) 값 세팅
 		application.setAttribute("applicationValue", "application scope 객체에 세팅한 값");
 		
+		// ---------------------------------------------------------
+		
+		// 범위별 우선순위 확인!!
+		// 좁은 범위가 우선순위 높다!!
+		// page > request session > application
+		
+		// key 값을 동일하게 하여 범위별 객체에 값 추가
+		req.setAttribute("menu", "짬뽕(request)");
+		session.setAttribute("menu", "짜장(session)");
+		application.setAttribute("menu", "볶음밥(application)");
+		
+		
+		// ---------------------------------------------------------
+		
 		// 응답처리
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/el/scope.jsp");
 		
