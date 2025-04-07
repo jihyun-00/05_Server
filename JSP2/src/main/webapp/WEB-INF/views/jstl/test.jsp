@@ -155,7 +155,7 @@
 		
 		<c:otherwise>
 			<h4>성인입니다.</h4>
-		</c:otherwise>>
+		</c:otherwise>
 	</c:choose>
 	
 	
