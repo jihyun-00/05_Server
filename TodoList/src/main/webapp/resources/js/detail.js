@@ -35,7 +35,7 @@ completeBtn.addEventListener("click", () => {
 const updateBtn = document.querySelector("#updateBtn");
 updateBtn.addEventListener("click", () => {
 
-  location.href = "/todo/update?todoNo=" + todoNo;
+  location.href = "/todo/update2";
 
 });
 

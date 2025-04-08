@@ -29,8 +29,7 @@
 		</div>
 		<div>
 		<textarea rows="3" cols="50" name="detail"
-		placeholder="상세 내용 입력..">
-		</textarea>
+		placeholder="상세 내용 입력.."></textarea>
 		</div>
 		
 		<button>추가하기</button>
