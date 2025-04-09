@@ -22,6 +22,4 @@ public interface TodoListDAO {
 
 	int todoDelete(Connection conn, int todoNo) throws Exception;
 
-	int todoDelete(Connection conn, int todoNo, String title, String detail) throws Exception;
-
 }

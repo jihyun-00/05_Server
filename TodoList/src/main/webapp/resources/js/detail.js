@@ -35,7 +35,7 @@ completeBtn.addEventListener("click", () => {
 const updateBtn = document.querySelector("#updateBtn");
 updateBtn.addEventListener("click", () => {
 
-  location.href = "/todo/update2";
+  location.href = "/todo/update?todoNo=" + todoNo;
 
 });
 
@@ -43,6 +43,14 @@ updateBtn.addEventListener("click", () => {
 const deleteBtn = document.querySelector("#deleteBtn");
 deleteBtn.addEventListener("click", () => {
 
+  //정말 삭제할 것인지 confirm()을 이용해서 확인
+  // confirm()은 확인 클릭 시 true, 취소 클릭 시 false 반환
+
+  // 취소 클릭 시
+  if(!confirm("정말 삭제하시겠습니까?")) return;
+
+  // 확인 버튼 클릭 시
+  // /todo/delete?todoNo=6 Get 방식 요청 보내기
   location.href = "/todo/delete?todoNo=" + todoNo;
 
 });
